@@ -41,6 +41,28 @@ $('#elm1, #elm2').click(function() {
   alert("thanks for clicking");
 });
 
+//Hide and show item
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+
+//Hide and show item animatedly with a molten effect
+$(document).ready(function(){
+  $("#showAnime").click(function(){
+    $("#box1").fadeIn(2000);
+  });
+});
+
+$(document).ready(function(){
+  $("#hideAnime").click(function(){
+    $("#box2").fadeOut(2000);
+  });
+});
 
 
 
