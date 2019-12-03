@@ -102,3 +102,22 @@ $( ".btnoption" ).click(function() {
   var text = $( this ).text();
   $( "#inpshow" ).val( text );
 });
+
+//Change the href attribute of the first <a> element 
+$(document).ready(function(){
+  $("#changehref").click(function(){
+    $("#w3s").attr("href", "https://www.youtube.com");
+  });
+});
+
+//Create a new <p> element with text inside the dom of your page
+$("#btncreate").click(function(){
+  $("#texts").append("<p>I am a new paragraph</p>");
+});
+
+//Show an alert with the value of the first <input> of the page
+
+
+
+
+
