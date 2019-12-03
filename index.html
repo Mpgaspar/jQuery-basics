@@ -25,7 +25,7 @@
   </div>
 
   <div class="row">
-      <p id="target3">Mouse is at coordinates: <span></span>.</p>
+      <p id="target3">Mouse is at coordinates: <span id="coord"></span>.</p>
   </div>
 
   <div class="row">
@@ -57,12 +57,41 @@
 </ul>
 </div>
 
-<div>
+<div class="row">
   <ul id="list01" >
-    <li class="fruit">apple</li>
-    <li class="fruit">orange</li>
-    <li class="fruit">banana</li>
+    <li class="fruits">apple, </li>
+    <li class="fruits">orange, </li>
+    <li class="fruits">banana</li>
   </ul>
+</div>
+
+<div style="width:500px;" class="row">div (grandparent)
+  <ul id="list02">ul (direct parent)  
+    <li>li (child)
+      <span>span (grandchild)</span>
+    </li>
+  </ul>   
+</div>
+
+<div class="row">
+  <button id="btnget" class="btn">get elements</button>
+</div>
+
+<div class="row">
+  <button id="btngetid" class="btn">get element</button>
+</div>
+
+<div class="row">
+<p class="paragraph col s12 m4 l4" style="display:none;">This is a paragraph.</p>
+<p class="paragraph col s12 m4 l4" style="display:none;">This is another paragraph.</p>
+<p class="paragraph col s12 m4 l4" style="display:none;">They are slowly shown.</p>
+</div>
+
+<input id="inpshow" type="text" value="Choose the options below to be shown">
+<div class="row">
+  <button class="btnoption btn col s12 m4 l4">Feed</button>
+  <button class="btnoption btn col s12 m4 l4">the</button>
+  <button class="btnoption btn col s12 m4 l4">Input</button>
 </div>
 
 </div>

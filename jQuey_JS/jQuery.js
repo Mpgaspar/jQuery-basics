@@ -32,7 +32,7 @@ $(document).ready(function(){
 //Cursor position
 $(document).ready(function(){
   $(document).mousemove(function(event){
-    $("span").text(event.pageX + ", " + event.pageY);
+    $("#coord").text(event.pageX + ", " + event.pageY);
   });
 });
 
@@ -75,4 +75,30 @@ $( "#btnChange" ).click(function() {
 $( '.fruit').each(function() {
   var parentTag = $( this ).parent().get( 0 ).tagName;
   $( this ).prepend( document.createTextNode( parentTag + " > " ) );
+});
+
+//Obtain the collection of children of a certain element
+$(document).ready(function(){
+  $("#list02").children().css({"color": "red", "border": "2px solid red"});
+});
+
+//Get all the elements of a certain class
+$("#btnget").click(function(){
+  alert("Value: " + $(".fruits").text());
+});
+
+//Get an item by its ID
+$("#btngetid").click(function(){
+  alert("Value: " + $("#list01").text());
+});
+
+//Obtain all the elements of a certain class that are also hidden
+$(document).ready(function(){
+  $(".paragraph:hidden").show(3500);
+});
+
+//Get those options of a selected element that are selected
+$( ".btnoption" ).click(function() {
+  var text = $( this ).text();
+  $( "#inpshow" ).val( text );
 });
