@@ -64,5 +64,15 @@ $(document).ready(function(){
   });
 });
 
+//Iterate a collection of elements and apply a change of style on them
+$( "#btnChange" ).click(function() {
+  $( "li" ).each(function() {
+    $( this ).toggleClass( "example" );
+  });
+});
 
-
+//Obtain the parent element of a certain element
+$( '.fruit').each(function() {
+  var parentTag = $( this ).parent().get( 0 ).tagName;
+  $( this ).prepend( document.createTextNode( parentTag + " > " ) );
+});
