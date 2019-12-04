@@ -116,8 +116,26 @@ $("#btncreate").click(function(){
 });
 
 //Show an alert with the value of the first <input> of the page
+$(document).ready(function(){
+  $("#btnreturn").click(function(){
+    alert($("input:text").val());
+  });
+});
 
+//Remove all elements of a specific selector
+$(document).ready(function(){
+  $("#btnremove").click(function(){
+    $("#div1").remove();
+  });
+});
 
+//Animate an item after 2 seconds from the initial page load
+$(document).ready(function() {
+  $(".contentPost").delay(2000).animate({
+    opacity: '0.5',
+    width: '150px'
+  });
+});
 
 
 
